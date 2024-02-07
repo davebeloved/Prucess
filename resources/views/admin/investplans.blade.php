@@ -45,12 +45,12 @@
                                         @csrf
                                         <div class="col-12">
                                             <label for="inputPlanName" class="form-label">Plan Name</label>
-                                            <input name="plan_name" type="text" class="form-control" id="inputPlanName" placeholder="Enter amount here" required>
+                                            <input name="plan_name" type="text" class="form-control" id="inputPlanName" placeholder="Enter plan name here" required>
                                         </div>
-                                        <div class="col-12">
+                                        <!-- <div class="col-12">
                                             <label for="amount" class="form-label">Amount</label>
-                                            <input name="amount" type="text" class="form-control" id="amount" placeholder="Enter plan name here" required>
-                                        </div>
+                                            <input name="amount" type="text" class="form-control" id="amount" placeholder="Enter amount here" required>
+                                        </div> -->
                                         <div class="col-12">
                                             <label for="min_deposit" class="form-label">Minimum Deposit</label>
                                             <input name="min_deposit" type="text" class="form-control" id="min_deposit" placeholder="Enter maximun deposit here" required>
@@ -60,14 +60,26 @@
                                             <input name="max_deposit" type="text" class="form-control" id="max_deposit" placeholder="Enter max deposit here" required>
                                         </div>
                                         <div class="col-12">
+                                            <label for="minimum_withdrawal" class="form-label">Minimum Withdrawal</label>
+                                            <input name="minimum_withdrawal" type="text" class="form-control" id="minimum_withdrawal" placeholder="Enter minimum_withdrawal here" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="daily_earnings" class="form-label">Daily Earnings</label>
+                                            <input name="daily_earnings" type="text" class="form-control" id="daily_earnings" placeholder="Enter daily_earnings here" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="duration" class="form-label">Duration</label>
+                                            <input name="duration" type="text" class="form-control" id="duration" placeholder="Enter duration here" required>
+                                        </div>
+                                        <!-- <div class="col-12">
                                             <label for="min_return" class="form-label">Minimum Return</label>
                                             <input name="min_return" type="text" class="form-control" id="min_return" placeholder="Enter minimum return here" required>
                                         </div>
                                         <div class="col-12">
                                             <label for="max_return" class="form-label">Max Return</label>
                                             <input name="max_return" type="text" class="form-control" id="max_return" placeholder="Enter max return here" required>
-                                        </div>
-                                        <div class="col-12">
+                                        </div> -->
+                                        <!-- <div class="col-12">
                                             <div class="form-group">
                                                 <label for="duration" class="form-label">Top Up Interval</label>
                                                 <select class="form-control" name="top_up_interval" id="top_up_interval" required>
@@ -77,8 +89,8 @@
                                                   <option>Monthly</option>
                                                 </select>
                                               </div>
-                                        </div>
-                                        <div class="col-12">
+                                        </div> -->
+                                        <!-- <div class="col-12">
                                             <div class="form-group">
                                                 <label for="top_up_type" class="form-label">Top Up Type</label>
                                                 <select class="form-control" name="top_up_type" id="top_up_type" required>
@@ -86,16 +98,16 @@
                                                   <option>Percentage</option>
                                                 </select>
                                               </div>
-                                        </div>
-                                        <div class="col-12">
+                                        </div> -->
+                                        <!-- <div class="col-12">
                                             <label for="top_up_value" class="form-label">Top Up Amount(in % or $ as specified above)</label>
                                             <input name="top_up_value" type="text" class="form-control" id="top_up_value" placeholder="Enter max return here" required>
-                                        </div>
-                                        <div class="col-12">
+                                        </div> -->
+                                        <!-- <div class="col-12">
                                             <label for="gift_bonus" class="form-label">Gift Bonus</label>
                                             <input name="gift_bonus" type="text" class="form-control" id="gift_bonus" placeholder="Enter gift bonus here" required>
-                                        </div>
-                                        <div class="col-12">
+                                        </div> -->
+                                        <!-- <div class="col-12">
                                             <div class="form-group">
                                                 <label for="duration" class="form-label">Duration</label>
                                                 <select class="form-control" name="duration" id="duration" required>
@@ -106,7 +118,7 @@
                                                   <option>1 Year</option>
                                                 </select>
                                               </div>
-                                        </div>
+                                        </div> -->
                                         <div class="col-12">
                                             <button type="submit" onclick="event.preventDefault();document.getElementById('createPlan').submit();" class="btn btn-primary">Create</button>
                                         </div>
@@ -117,6 +129,15 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 'plan_name',
+        'min_deposit',
+        'max_deposit',
+        'daily_earnings',
+        'duration',
+        'plan_user_id',
+        'top_up_value',
+        'minimum_withdrawal', -->
 
             <div class="row">
                 <div class="col">

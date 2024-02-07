@@ -24,17 +24,23 @@ class StoreInvestmentPlansRequest extends FormRequest
     public function rules()
     {
         return [
-            'plan_name' => 'required|alpha',
-            'amount' => 'required|numeric',
+            'plan_name' => 'required',
+            // 'amount' => 'required|numeric',
             'min_deposit' => 'required|numeric',
             'max_deposit' => 'required|numeric',
-            'min_return' => 'required|numeric',
-            'max_return' => 'required|numeric',
-            'gift_bonus' => 'required|numeric',
-            'duration' => 'required',
-            'top_up_value' => 'required',
-            'top_up_type' => 'required',
-            'top_up_interval' => 'required',
+            // 'min_return' => 'required|numeric',
+            // 'max_return' => 'required|numeric',
+            // 'gift_bonus' => 'required|numeric',
+            // 'duration' => 'required|alpha',
+            // 'top_up_value' => 'required',
+            // 'top_up_type' => 'required',
+            // 'top_up_interval' => 'required',
+            'minimum_withdrawal' => 'required|numeric',
+            'daily_earnings' => 'required|numeric',
+            'duration' => 'required|numeric',
+
         ];
     }
 }
+
+
